@@ -30,7 +30,7 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -55,16 +55,22 @@ a {
   color: var(--accent-text-color);
 }
 
-/*main nav*/
-.main {
+/*main-nav / just header*/
+
+.header-main {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+.header {
   display: flex;
   align-items: center;
 }
 .main-nav {
   display: flex;
   align-items: center;
-  border: 1px solid #ececec;
 }
+
 /*site nav*/
 .site-nav {
   display: flex;
@@ -124,8 +130,8 @@ a {
 
 /*hero*/
 .hero {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background: #2f303a;
 }
@@ -170,9 +176,13 @@ a {
 }
 .feature-list .item {
   margin-right: var(--the-most-often-px);
+  width: 270px;
 }
 .feature-list .item:last-child {
   margin-right: 0;
+}
+.who-we-are {
+  padding-top: 0;
 }
 .section-title {
   margin-top: 0;
@@ -192,9 +202,13 @@ a {
 .work-list .item:last-child {
   margin-right: 0;
 }
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-list .title {
   text-align: center;
-  margin-top: var(--the-most-often-px);
+  /*margin-top: var(--the-most-often-px);*/
   margin-bottom: 0;
   color: var(--title-text-color);
   font-weight: 500;
@@ -225,7 +239,6 @@ a {
 
 .button {
   display: inline-block;
-  margin-bottom: 50px;
   border-radius: 4px;
   padding: 6px 22px;
   text-align: center;
@@ -239,6 +252,7 @@ a {
 .button-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
   color: var(--title-text-color);
 }
 .button-list .item {
@@ -266,7 +280,7 @@ a {
 }
 
 .doing-list .title {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 0;
   color: var(--title-text-color);
   font-weight: 700;
@@ -279,6 +293,7 @@ a {
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.9;
+  color: var(--primary-text-color);
 }
 .doing-list {
   display: flex;
@@ -303,10 +318,13 @@ a {
 /*footer*/
 .footer {
   background: #2f303a;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .footer .logo {
   color: var(--accent-text-color);
+  margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -315,16 +333,16 @@ a {
 .footer-address {
   font-style: normal;
 }
-.logo-footer {
-  margin-bottom: 20px;
-}
+
 .logo-white {
   color: var(--title-text-color-secondary);
 }
 .address {
+  /*margin-bottom: 9px;*/
   color: var(--title-text-color-secondary);
 }
 .footer .link {
+  margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
 .card-content {

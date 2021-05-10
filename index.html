@@ -20,27 +20,31 @@
   <body>
     <!--Студия-->
     <!--контактная информация-->
-    <header class="container main-nav">
-      <nav class="main">
-        <a class="logo" href="./index.html"
-          ><span class="logo-web">Web</span>Studio</a
-        >
-        <ul class="site-nav list">
-          <li class="item"><a href="" class="link current">Студия</a></li>
+    <header class="header-main">
+      <div class="container header">
+        <nav class="main-nav">
+          <a class="logo" href="./index.html"
+            ><span class="logo-web">Web</span>Studio</a
+          >
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts-nav list">
           <li class="item">
-            <a href="./portfolio.html" class="link">Портфолио</a>
+            <a href="mailto:info@example.com" class="link">info@example.com</a>
           </li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
+          <li class="item">
+            <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contacts-nav list">
-        <li class="item">
-          <a href="mailto:info@example.com" class="link">info@example.com</a>
-        </li>
-        <li class="item">
-          <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!--герой-->
@@ -85,7 +89,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section who-we-are">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-list">
@@ -124,8 +128,10 @@
                 alt="Фото члена команды"
                 width="270"
               />
-              <h3 class="title">Игорь Демьяненко</h3>
-              <p class="profession" lang="en">Product Designer</p>
+              <div class="team-card">
+                <h3 class="title">Игорь Демьяненко</h3>
+                <p class="profession" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -133,8 +139,10 @@
                 alt="Фото члена команды"
                 width="270"
               />
-              <h3 class="title">Ольга Репина</h3>
-              <p class="profession" lang="en">Frontend Developer</p>
+              <div class="team-card">
+                <h3 class="title">Ольга Репина</h3>
+                <p class="profession" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -142,8 +150,10 @@
                 alt="Фото члена команды"
                 width="270"
               />
-              <h3 class="title">Николай Тарасов</h3>
-              <p class="profession" lang="en">Marketing</p>
+              <div class="team-card">
+                <h3 class="title">Николай Тарасов</h3>
+                <p class="profession" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -151,8 +161,10 @@
                 alt="Фото члена команды"
                 width="270"
               />
-              <h3 class="title">Михаил Ермаков</h3>
-              <p class="profession" lang="en">UI Designer</p>
+              <div class="team-card">
+                <h3 class="title">Михаил Ермаков</h3>
+                <p class="profession" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
