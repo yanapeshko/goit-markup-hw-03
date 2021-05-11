@@ -34,6 +34,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -133,11 +134,15 @@ a {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+
   background: #2f303a;
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: var(--the-most-often-px);
+
+  min-width: 696px;
+  /*white-space: pre-line;*/
   color: var(--title-text-color-secondary);
   font-weight: 900;
   font-size: 44px;
@@ -151,6 +156,9 @@ a {
   padding: 10px 32px;
   min-width: 200px;
   text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
   letter-spacing: 0.06em;
   color: var(--title-text-color-secondary);
   background-color: var(--accent-text-color);
@@ -208,7 +216,7 @@ a {
 }
 .team-list .title {
   text-align: center;
-  /*margin-top: var(--the-most-often-px);*/
+  margin-top: 0;
   margin-bottom: 0;
   color: var(--title-text-color);
   font-weight: 500;
@@ -323,8 +331,10 @@ a {
 }
 
 .footer .logo {
-  color: var(--accent-text-color);
+  display: block;
+  margin-top: 0;
   margin-bottom: 20px;
+  color: var(--accent-text-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -342,6 +352,8 @@ a {
   color: var(--title-text-color-secondary);
 }
 .footer .link {
+  display: block;
+  margin-bottom: 0;
   margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
