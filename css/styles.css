@@ -140,8 +140,9 @@ a {
 .hero-title {
   margin-top: 0;
   margin-bottom: var(--the-most-often-px);
-
-  min-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
   /*white-space: pre-line;*/
   color: var(--title-text-color-secondary);
   font-weight: 900;
