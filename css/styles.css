@@ -22,7 +22,7 @@ ul {
 a {
   text-decoration: none;
 }
-.image {
+img {
   display: block;
   max-width: 100%;
 }
@@ -137,6 +137,7 @@ a {
 
   background: #2f303a;
 }
+
 .hero-title {
   margin-top: 0;
   margin-bottom: var(--the-most-often-px);
@@ -262,6 +263,7 @@ a {
 .button {
   display: inline-block;
   border-radius: 4px;
+  border: 0;
   padding: 6px 22px;
   text-align: center;
   letter-spacing: inherit;
@@ -283,7 +285,12 @@ a {
 .button-list .item:last-child {
   margin-right: 0;
 }
-.button-list .current {
+.button-list .button:focus,
+.button-list .button:hover {
+  background-color: var(--accent-text-color);
+  color: var(--title-text-color-secondary);
+}
+.button-list .button.current {
   background-color: var(--accent-text-color);
   color: var(--title-text-color-secondary);
   min-width: 73px;
@@ -325,7 +332,8 @@ a {
   /*outline: 1px solid tomato;*/
 }
 .doing-list > .item {
-  flex-basis: calc(100% / 3 -var(--the-most-often-px));
+  display: block;
+  flex-basis: calc(100% / 3 - var(--the-most-often-px));
   margin-left: var(--the-most-often-px);
   margin-top: var(--the-most-often-px);
   /*outline: 1px solid teal;*/
@@ -373,5 +381,7 @@ a {
 }
 .card-content {
   padding: 20px 24px 20px 24px;
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
